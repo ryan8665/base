@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="dbConfiguration" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:conf/applicationConfig.properties</value>
+            </list>
+        </property>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+    </bean>
+    <bean id="applicationConfig" class="com.ApplicationConfig" >
+        <constructor-arg name="configFilePath" value="conf/applicationConfig"/>
+    </bean>
+
+    <import resource="webflow.xml"/>
+    <import resource="spring-security.xml"/>
+    <import resource="dataSource.xml"/>
+    <import resource="applicationContext-bean.xml"/>
+    <import resource="applicationContext-scheduler.xml"/>
+    <import resource="applicationContext-service.xml"/>
+    <import resource="applicationContext-dao.xml"/>
+    <!--<import resource="webflow.xml"/>-->
+</beans>
