@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="MySQL for 5.1 - sample@localhost" uuid="ac6a839b-072e-44af-b3c4-c83df1d6f986">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/sample</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="dataSource" uuid="adfade79-fa8b-4867-871a-6693c282001c">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>spring
+
+C:/Users/amirk/IdeaProjects/base/core/src/main/webapp/WEB-INF/dataSource.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/sample</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="database" uuid="8258c32a-60c9-4955-a9e8-253ffe3300e0">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>jdbc.properties
+
+C:/Users/amirk/IdeaProjects/base/core/src/main/resources/database.properties</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/sample</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="dataSource" uuid="f23a1755-fff9-4d7f-82d4-b080ca323499">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>spring
+
+C:/Users/amirk/IdeaProjects/base/core/src/main/webapp/WEB-INF/dataSource.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/sample</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="cd02b701-f040-42e3-9c23-d32e8a75d702">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/amirk/IdeaProjects/base/core/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/sample?zeroDateTimeBehavior=convertToNull</jdbc-url>
+    </data-source>
+  </component>
+</project>
