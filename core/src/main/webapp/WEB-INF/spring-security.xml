@@ -11,10 +11,14 @@
         <intercept-url pattern="/web/ns/**" access="permitAll()" />
         <intercept-url pattern="/web/s/**" access="isAuthenticated()" />
 
-        <form-login login-page='/web/ns/login'
+        <form-login login-page="/web/ns/login"
                     default-target-url="/web/s/main"
                     authentication-failure-url="/web/ns/login" />
         <logout logout-success-url="/web/ns/login" />
+
+        <session-management invalid-session-url="/web/ns/login" >
+            <concurrency-control max-sessions="1" error-if-maximum-exceeded="true" expired-url="/web/ns/login"/>
+        </session-management>
 
     </http>
 
