@@ -1,6 +1,11 @@
 body{
-    color: blue;
+    color: blue !important;
 }
 .ali{
-    color: blue;
+    color: blue !important;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    color: blue !important;
 }
