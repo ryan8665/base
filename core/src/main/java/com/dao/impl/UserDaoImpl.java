@@ -2,12 +2,13 @@ package com.dao.impl;
 
 import com.dao.UserDao;
 import com.entity.AlirezaEntity;
-import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 
 @Repository
+@Transactional
 public class UserDaoImpl implements UserDao {
     private SessionFactory sessionFactory;
 
@@ -17,11 +18,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public void persistUser(AlirezaEntity user) {
-        try {
-            sessionFactory.getCurrentSession().persist(user);
-        } catch (HibernateException e) {
-            e.printStackTrace();
-        }
+        sessionFactory.getCurrentSession().persist(user);
     }
 
     @Override
@@ -31,13 +28,14 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public void updateUser(AlirezaEntity user) {
-
+        sessionFactory.getCurrentSession().update(user);
     }
 
     @Override
     public void deleteUser(AlirezaEntity user) {
-
+        sessionFactory.getCurrentSession().delete(user);
     }
+
 
 
 }

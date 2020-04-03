@@ -1,19 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://java.sun.com/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pe="http://primefaces.org/ui/extensions">
+
 <h:head>
-    <title>haha</title>
+    <title>Login</title>
+
+    <h:outputStylesheet library = "css" name = "ali.css"  />
+    <h:outputStylesheet library = "css" name = "/ali.css"  />
+    <h:outputStylesheet name="/css/ali.css" />
+    <h:outputStylesheet name="css/ali.css" />
+    <h:outputStylesheet name="/ali.css" />
+    <h:outputStylesheet name="ali.css" />
+    <link href="../resources/css/ali.css" rel="stylesheet" type="text/css"/>
+    <link href="./resources/ali.css" rel="stylesheet" type="text/css"/>
+
 </h:head>
+
 <h:body>
-    <form name='f' action='/login' method='POST'>
-        <table>
-            <tr><td>User:</td><td><input type='text' name='username' value=''/></td></tr>
-            <tr><td>Password:</td><td><input type='password' name='password'/></td></tr>
-            <tr><td colspan='2'><input name="submit" type="submit" value="Login"/></td></tr>
-        </table>
-    </form>
+    <h:form >
+
+        <p:panelGrid columns="1" styleClass="ui-fluid center ui-noborder">
+            <h2>Login</h2>
+            #{main.doLogin()} sss #{msg['login.txt']}
+
+            <p:outputLabel value="Login failed!" styleClass="red"
+                           rendered="${!empty param['error']}" />
+
+            <p:inputText id="username" placeholder="User name" />
+            <p:password id="password" placeholder="Password" />
+
+            <p:commandButton value="Login" action="doLogin" ajax="false"/>
+            <p:commandButton  value="Ajax Submit" id="ajax" ajax="false"
+                              style="margin-right:20px;"
+                              styleClass="ui-priority-primary"/>
+
+        </p:panelGrid>
+
+
+    </h:form>
 </h:body>
 </html>

@@ -3,11 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="loginBean" class="com.main.Main" scope="session">
 
-    </bean>
-
-    <bean id="main" class="com.bean.mainBean" scope="session">
+    <bean id="main" class="com.bean.MainBean" scope="session">
         <property name="applicationConfig" ref="applicationConfig"/>
         <property name="alirezaservice" ref="alirezaservice"/>
     </bean>

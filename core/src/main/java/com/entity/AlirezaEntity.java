@@ -3,13 +3,16 @@ package com.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "alireza")
+@Table(name = "alireza", schema = "sample")
 public class AlirezaEntity {
     private int id;
     private String txt;
+    private String password;
+    private String role;
 
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy=GenerationType.AUTO)
     public int getId() {
         return id;
     }
@@ -46,5 +49,25 @@ public class AlirezaEntity {
         int result = id;
         result = 31 * result + (txt != null ? txt.hashCode() : 0);
         return result;
+    }
+
+    @Basic
+    @Column(name = "password", nullable = false, length = 100)
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Basic
+    @Column(name = "role", nullable = false, length = 100)
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

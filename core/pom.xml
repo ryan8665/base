@@ -413,8 +413,7 @@
 
         </dependency>
 
-
-        <!--        test-->
+<!--        test-->
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -425,13 +424,13 @@
         <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
-            <version>1.4</version>
+            <version>1.2.2</version>
         </dependency>
 
         <dependency>
             <groupId>javax.persistence</groupId>
             <artifactId>persistence-api</artifactId>
-            <version>1.0.2</version>
+            <version>1.0</version>
         </dependency>
 
         <dependency>
@@ -440,13 +439,11 @@
             <version>5.4.12.Final</version>
         </dependency>
 
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.6</version>
-        </dependency>
 
         <!--test-->
+
+
+
 
         <dependency>
             <groupId>mysql</groupId>
@@ -464,6 +461,7 @@
 
 
     </dependencies>
+
 
     <build>
         <finalName>core</finalName>
