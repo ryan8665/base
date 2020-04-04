@@ -413,7 +413,7 @@
 
         </dependency>
 
-<!--        test-->
+        <!--  hibernate-->
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -440,10 +440,7 @@
         </dependency>
 
 
-        <!--test-->
-
-
-
+        <!--hibernate-->
 
         <dependency>
             <groupId>mysql</groupId>
