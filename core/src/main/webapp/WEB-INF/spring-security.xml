@@ -22,7 +22,7 @@
                     password-parameter="password"
                     login-processing-url="/web/ns/login"
                     authentication-success-handler-ref="authenticationSuccessHandler"
-                    authentication-failure-url="/web/ns/main?error=true" />
+                    authentication-failure-url="/web/ns/accessDenied" />
         <logout logout-url="/logout" logout-success-url="/web/ns/login" />
 
         <session-management invalid-session-url="/web/ns/login" >
