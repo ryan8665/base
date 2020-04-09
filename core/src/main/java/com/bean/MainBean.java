@@ -32,7 +32,7 @@ public class MainBean {
         alirezaEntity.setPassword("password");
         alirezaEntity.setRole("ROLE_USER");
 //        alirezaEntity.setId(3);
-    //    alirezaservice.persistAlireza(alirezaEntity);
+        alirezaservice.persistAlireza(alirezaEntity);
     }
 
     public String doLogin(){

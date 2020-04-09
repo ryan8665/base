@@ -413,7 +413,7 @@
 
         </dependency>
 
-        <!--  hibernate-->
+        <!--  hibernate -->
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -448,7 +448,6 @@
             <version>${mysql}</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.nsoft</groupId>
             <artifactId>common</artifactId>
@@ -456,14 +455,15 @@
             <scope>compile</scope>
         </dependency>
 
+        <!--sentinel theme-->
         <dependency>
             <groupId>groupId</groupId>
             <artifactId>artifactId</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/sentinel-theme-2.1.jar</systemPath>
+            <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/sentinel-theme-2.1.2.jar</systemPath>
         </dependency>
-
+        <!--sentinel theme-->
 
     </dependencies>
 

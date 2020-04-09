@@ -5,24 +5,26 @@
 
     <application>
         <el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+<!--        <variable-resolver>org.springframework.web.jsf.DelegatingVariableResolver</variable-resolver>-->
         <resource-bundle>
             <base-name>/bundel/applicationMessage</base-name>
             <var>msg</var>
         </resource-bundle>
     </application>
 
-    <!--    <name>primefaces-sentinel</name>-->
 
-    <!--    <component>-->
-    <!--        <component-type>org.primefaces.component.SentinelMenu</component-type>-->
-    <!--        <component-class>org.primefaces.sentinel.component.menu.SentinelMenu</component-class>-->
-    <!--    </component>-->
 
-    <!--    <render-kit>-->
-    <!--        <renderer>-->
-    <!--            <component-family>org.primefaces.component</component-family>-->
-    <!--            <renderer-type>org.primefaces.component.SentinelMenuRenderer</renderer-type>-->
-    <!--            <renderer-class>org.primefaces.sentinel.component.menu.SentinelMenuRenderer</renderer-class>-->
-    <!--        </renderer>-->
-    <!--    </render-kit>-->
+
+    <component>
+        <component-type>org.primefaces.component.SentinelMenu</component-type>
+        <component-class>org.primefaces.sentinel.component.menu.SentinelMenu</component-class>
+    </component>
+
+    <render-kit>
+        <renderer>
+            <component-family>org.primefaces.component</component-family>
+            <renderer-type>org.primefaces.component.SentinelMenuRenderer</renderer-type>
+            <renderer-class>org.primefaces.sentinel.component.menu.SentinelMenuRenderer</renderer-class>
+        </renderer>
+    </render-kit>
 </faces-config>

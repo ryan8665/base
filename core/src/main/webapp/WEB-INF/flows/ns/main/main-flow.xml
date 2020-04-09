@@ -3,7 +3,14 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.4.xsd">
 
-
     <view-state id="main">
+        <transition on="doLogin" to="page" >
+
+        </transition>
     </view-state>
+
+    <view-state id="page">
+
+    </view-state>
+
 </flow>

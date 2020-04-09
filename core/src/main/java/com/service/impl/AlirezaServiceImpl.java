@@ -18,9 +18,13 @@ public class AlirezaServiceImpl implements AlirezaService {
 
     public void persistAlireza(AlirezaEntity alireza) {
 //        AlirezaEntity a =   alirezadao.findUserById(1);
-        AlirezaEntity a =   alirezadao.findUserById(2);
-        System.out.printf("aaaaaaaa" + a.getId());
-        System.out.printf("aaaaaaaa" + a.getTxt());
+        try {
+            AlirezaEntity a =   alirezadao.findUserById(2);
+            System.out.printf("aaaaaaaa" + a.getId());
+            System.out.printf("aaaaaaaa" + a.getTxt());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         alirezadao.persistUser(alireza);
 //        alirezadao.deleteUser(alireza);
     }

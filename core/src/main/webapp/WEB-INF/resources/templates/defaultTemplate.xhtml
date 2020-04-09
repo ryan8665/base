@@ -11,12 +11,11 @@
     <h:head>
         <title>#{msg['login.txt']}</title>
 
-        <meta http-equiv="Expires" content="-1"/>
-
         <link href="./resources/sentinel-layout/css/font-icon-layout.css" rel="stylesheet" type="text/css"/>
         <link href="./resources/sentinel-layout/css/sentinel-layout.css" rel="stylesheet" type="text/css"/>
         <link href="./resources/sentinel-layout/css/core-layout.css" rel="stylesheet" type="text/css"/>
-<!--        <script type="text/javascript" src="./resources/sentinel-layout/js/login.js" />-->
+        <script type="text/javascript" src="./resources/sentinel-layout/js/layout.js"/>
+
 
         <ui:insert name="styles"/>
         <ui:insert name="inHead"/>
@@ -25,11 +24,21 @@
 
     </h:head>
 
+    <h:body  class="ui-sentinel-rtl" >
+        <ui:include src="topbar.xhtml" />
 
-    <h:body styleClass="fontRegular white-back fontIran">
-            <div class="mainContent">
-                <ui:insert name="content">Default value for Content</ui:insert>
-            </div>
+        <ui:include src="leftmenu.xhtml" />
+
+        <div id="layout-portlets-cover" class="fontRegular">
+            <ui:insert name="content">
+                Template
+            </ui:insert>
+
+            <ui:include src="footer.xhtml" />
+        </div>
+
+
+
     </h:body>
 
 </html>
