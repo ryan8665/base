@@ -15,12 +15,12 @@
                 <div class="Wid50 MarAuto OvHidden TexAlCenter">
                     <p:graphicImage value="./resources/sentinel-layout/images/access-denied.svg"  style="width: 140px;"/>
                     <div class="EmptyBox20"></div>
-                    <span class="white Fs60 Wid100 DispBlock fontIran">دسترسی‌ غیر مجاز</span>
-                    <span class="white Wid100 DispBlock Fs24 fontIran">لطفا دوباره وارد شوید</span><br/>
-                    <span class="white Wid100 DispBlock Fs12 fontIran">متاسفانه شما به این صفحه دسترسی‌ ندارید، لطفا دوباره وارد شوید<br/>
+                    <span class="white Fs60 Wid100 DispBlock fontIran">#{msg['error.access.denied']}</span>
+                    <span class="white Wid100 DispBlock Fs24 fontIran">#{msg['error.access.denied.line1']}</span><br/>
+                    <span class="white Wid100 DispBlock Fs12 fontIran">#{msg['error.access.denied.line2']}<br/>
             </span>
                     <div class="EmptyBox20"></div>
-                    <p:button value="بازگشت به صفحه اصلی‌" styleClass="MainButton2" href="login"></p:button>
+                    <p:button value="#{msg['error.access.denied.button']}‌" styleClass="MainButton2" href="login"></p:button>
                     <div class="EmptyBox50"></div>
                 </div>
             </div>

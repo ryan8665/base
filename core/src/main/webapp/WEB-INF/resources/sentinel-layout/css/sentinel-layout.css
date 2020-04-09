@@ -5,23 +5,61 @@
 * Copyright 2014 - PrimeFaces Theme Market - PrimeTek */
 
 /* FONT-FACE*/
-
-
 @font-face {
-    font-family: 'IranSans';
-    src: url("../fonts/IRANSans-web.eot");
-    src: url("../fonts/IRANSans-web.eot") format('embedded-opentype'),
-    url("../fonts/IRANSans-web.woff") format('woff'),
-    url("../fonts/IRANSans-web.ttf") format('truetype');
+    font-family: 'titillium_webregular';
+    src: url("../fonts/titilliumweb-regular-webfont.eot");
+    src: url("../fonts/titilliumweb-regular-webfont.eot") format('embedded-opentype'),
+         url("../fonts/titilliumweb-regular-webfont.woff") format('woff'),
+         url("../fonts/titilliumweb-regular-webfont.ttf") format('truetype'),
+         url("../fonts/titilliumweb-regular-webfont.svg") format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'yekan';
-    
-    src: url("../fonts/Yekan.ttf") format('truetype');
+    font-family: 'titillium_websemibold';
+    src: url("../fonts/titilliumweb-semibold-webfont.eot");
+    src: url("../fonts/titilliumweb-semibold-webfont.eot") format('embedded-opentype'),
+         url("../fonts/titilliumweb-semibold-webfont.woff") format('woff'),
+         url("../fonts/titilliumweb-semibold-webfont.ttf") format('truetype'),
+         url("../fonts/titilliumweb-semibold-webfont.svg") format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'titillium_webbold';
+    src: url("../fonts/titilliumweb-bold-webfont.eot");
+    src: url("../fonts/titilliumweb-bold-webfont.eot") format('embedded-opentype'),
+         url("../fonts/titilliumweb-bold-webfont.woff") format('woff'),
+         url("../fonts/titilliumweb-bold-webfont.ttf") format('truetype'),
+         url("../fonts/titilliumweb-bold-webfont.svg") format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'titillium_webbold_italic';
+    src: url("../fonts/titilliumweb-bolditalic-webfont.eot");
+    src: url("../fonts/titilliumweb-bolditalic-webfont.eot") format('embedded-opentype'),
+         url("../fonts/titilliumweb-bolditalic-webfont.woff") format('woff'),
+         url("../fonts/titilliumweb-bolditalic-webfont.ttf") format('truetype'),
+         url("../fonts/titilliumweb-bolditalic-webfont.svg") format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'titillium_websemibold_italic';
+    src: url("../fonts/titilliumweb-semibolditalic-webfont.eot");
+    src: url("../fonts/titilliumweb-semibolditalic-webfont.eot") format('embedded-opentype'),
+         url("../fonts/titilliumweb-semibolditalic-webfont.woff") format('woff'),
+         url("../fonts/titilliumweb-semibolditalic-webfont.ttf") format('truetype'),
+         url("../fonts/titilliumweb-semibolditalic-webfont.svg") format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -29,16 +67,20 @@
 
 @font-face {
     font-family: 'iran';
-    
-     src: url("../fonts/IRANSans-web.eot");
+
+    src: url("../fonts/IRANSans-web.eot");
     src: url("../fonts/IRANSans-web.eot") format('embedded-opentype'),
-         url("../fonts/IRANSans-web.woff") format('woff'),
-         url("../fonts/IRANSans-web.ttf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    url("../fonts/IRANSans-web.woff") format('woff'),
+    url("../fonts/IRANSans-web.ttf") format('truetype');
 
 }
 
+.FontTitilliumRegular{font-family: 'titillium_webregular';}
+.FontTitilliumSemiBold{font-family: 'titillium_websemibold';}
+.FontTitilliumBold{font-family: 'titillium_webbold';}
+.FontTitilliumBoldItalic{font-family: 'titillium_webbold_italic';}
+.FontTitilliumSemiBoldItalic{font-family: 'titillium_websemibold_italic';}
+.FontIran{font-family: 'iran';}
 
 
 /*BODY*/
@@ -68,14 +110,14 @@ body{background-color: #F6F8F8; margin:0px;}
 
 	/* HEADER BAR */
 	#layout-header{width:100%; display:block; position:fixed; z-index:1000; box-sizing:content-box;
-					border-bottom:solid 1px #242525; border-top:solid 1px #242525;
+					border-bottom:solid 1px #0b4170; border-top:solid 1px #0b4170;
 					background: #1578c9;
-					background: -moz-linear-gradient(top, #909192 0%, #2c2c2c 100%);
-					background: -webkit-gradient(left top, left bottom, color-stop(0%, #2c2c2c), color-stop(100%, #0b66b1));
-					background: -webkit-linear-gradient(top, #909192 0%, #2c2c2c 100%);
-					background: -o-linear-gradient(top, #909192 0%, #2c2c2c 100%);
-					background: -ms-linear-gradient(top, #909192 0%, #2c2c2c 100%);
-					background: linear-gradient(to bottom, #909192 0%, #2c2c2c 100%);
+					background: -moz-linear-gradient(top, #1578c9 0%, #0b66b1 100%);
+					background: -webkit-gradient(left top, left bottom, color-stop(0%, #1578c9), color-stop(100%, #0b66b1));
+					background: -webkit-linear-gradient(top, #1578c9 0%, #0b66b1 100%);
+					background: -o-linear-gradient(top, #1578c9 0%, #0b66b1 100%);
+					background: -ms-linear-gradient(top, #1578c9 0%, #0b66b1 100%);
+					background: linear-gradient(to bottom, #1578c9 0%, #0b66b1 100%);
 					-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.4);
 					-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.4);
 					box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.4);}
@@ -83,35 +125,35 @@ body{background-color: #F6F8F8; margin:0px;}
                     #layout-logo img{height:16px;}
                     
 		.layout-header-widgets{margin:0px; padding:0px; position:absolute; right:10px; top:6px;}
-			.layout-header-widgets li{background-color:#242525; width:34px; height:34px; margin-left:10px; /*for background transition overflow problem of safari*/-webkit-backface-visibility: hidden;}
-			.layout-header-widgets li:hover{background-color:#353434;}
+			.layout-header-widgets li{background-color:#0f446c; width:34px; height:34px; margin-left:10px; /*for background transition overflow problem of safari*/-webkit-backface-visibility: hidden;}
+			.layout-header-widgets li:hover{background-color:#165686;}
 				.layout-header-widgets li i{margin-top:7px; display:block;cursor:pointer}
-				.alertBubble{background-color:#F15A29; color:#ffffff; overflow:hidden; padding:3px 4px; display:inline-block; position:absolute; margin-top:-5px;}
+				.alertBubble{background-color:#e90c45; color:#ffffff; overflow:hidden; padding:3px 4px; display:inline-block; position:absolute; margin-top:-5px;}
 				
 				.layout-header-widgets-submenu{width:200px; padding:14px; margin:0px; position:relative; margin-top:8px; margin-left:-180px; overflow:auto; display:none; max-height: 300px;
-											    background-repeat:no-repeat; background-position:top right;}
-					.layout-header-widgets-submenu li{padding:0px; margin:0px; margin-left:0px !important; border-bottom:solid 1px #323131; width:100% !important; height:auto !important; 
-													display:block; background-color:#464646;}
+											   background-image:url("#{resource['sentinel-layout:images/popupBlueArrow.png']}"); background-repeat:no-repeat; background-position:top right;}
+					.layout-header-widgets-submenu li{padding:0px; margin:0px; margin-left:0px !important; border-bottom:solid 1px #083359; width:100% !important; height:auto !important; 
+													display:block; background-color:#0b4170;}
 						.layout-header-widgets-submenu li i{float:left; margin:0px 10px !important;}
 						.layout-header-widgets-submenu li a{padding:10px; display:block; text-align:left; overflow:hidden;}
 	
 	/* MENU BAR */
-	#layout-menubar{float:left; padding-top:55px; background-color: #141414; position:relative; z-index: 998;}
-	.bigmenu{width:260px; border-right: solid 1px #222222;}
+	#layout-menubar{float:left; padding-top:55px; background-color: #3D3D3D; position:relative; z-index: 998;}
+	.bigmenu{width:260px; border-right: solid 1px #272727;}
 		.layout-menubarinner-box{width:230px; display:table; padding:10px 15px; overflow: hidden;}
 			#layout-menubar-resize{display:inline-block; padding:5px; background-color:#2B2B2B; color:#FFD100; float:right;}
 			#layout-menubar-resize2{display:none; padding:5px; background-color:#2B2B2B; color:#FFD100; float:right;}
 			.layout-menubar-search{width:200px; padding:0px 0px 3px 0px; border:0px; border:none; background-color:transparent; outline:none; border-bottom:solid 1px #5A5A5A;
-								   color:#5A5A5A !important; font-size:11px;}
+								   color:#5A5A5A !important; font-size:14px;}
 			.layout-menubar-search:focus{color:#939393 !important;}
 		.layout-menubar-container{width:260px; padding:0px; margin-bottom:60px;}
-			#layout-menubar li {width:100%; padding:0px; color:#D9D9D9; font-size:12px; cursor:pointer;}
-			#layout-menubar li:hover{background-color:#373737;}
-			.layout-menubar-active{background-color:#282828; text-shadow: 0 1px 0 #000000;}
+			#layout-menubar li {width:100%; padding:0px; color:#D9D9D9; font-size:14px; cursor:pointer;}
+			#layout-menubar li:hover{background-color:#303030;}
+			.layout-menubar-active{background-color:#303030; text-shadow: 0 1px 0 #000000;}
 				.layout-menubar-active i{}
-				#layout-menubar li a{color:#D9D9D9; padding:15px; display:block; border-bottom:solid 1px #0c0c0c; -webkit-transition: all 0.5s ease;
+				#layout-menubar li a{color:#D9D9D9; padding:15px; display:block; border-bottom:solid 1px #4D4D4D; -webkit-transition: all 0.5s ease;
                                                           -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
-                                #layout-menubar li a:hover{color:#FFD100; padding-right:20px;}
+                                #layout-menubar li a:hover{color:#FFD100; padding-left:20px;}
 			.layout-menubar-submenu-container{padding:0px; overflow:hidden;display: none;}
 			.layout-menubar-submenu-open{background-color:#353333;}
 			
@@ -120,7 +162,7 @@ body{background-color: #F6F8F8; margin:0px;}
 			
 	/* SEARCH AREA */
 
-	.slimsearch:hover{position:relative; background-color: #2c2c2c; width:280px !important;}
+	.slimsearch:hover{position:relative; background-color: #303030; width:280px !important;}
             .slimsearch:hover input{display:inline-block !important;}
 	.slimsearch i{margin-left: 6px; margin-right:13px;}
 	.slimsearch:hover i{color:#FFD100;}
@@ -155,7 +197,7 @@ li{list-style:none;}
 .Top20Percent{top:20%;}
 
 /* button colors */
-.RedButton .ui-button-text{font-family: iran,IranSans,yekan !important;box-shadow: inset 0 0 0 1px #F23030; border: solid 1px #871717; text-shadow: 0 -1px 0 #670606;
+.RedButton .ui-button-text{box-shadow: inset 0 0 0 1px #F23030; border: solid 1px #871717; text-shadow: 0 -1px 0 #670606;
 background: #c91515;
 background: -moz-linear-gradient(top, #c91515 0%, #b10b0b 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, #c91515), color-stop(100%, #b10b0b));
@@ -174,7 +216,7 @@ background: -ms-linear-gradient(top, #b10b0b 0%, #c91515 100%);
 background: linear-gradient(to bottom, #b10b0b 0%, #c91515 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b10b0b', endColorstr='#c91515', GradientType=0 );}
 
-.GreenButton .ui-button-text{font-family: iran,IranSans,yekan !important;box-shadow: inset 0 0 0 1px #54DB26; border: solid 1px #2B8717; text-shadow: 0 -1px 0 #18840B;
+.GreenButton .ui-button-text{box-shadow: inset 0 0 0 1px #54DB26; border: solid 1px #2B8717; text-shadow: 0 -1px 0 #18840B;
 background: #2dc915;
 background: -moz-linear-gradient(top, #2dc915 0%, #0bb113 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, #2dc915), color-stop(100%, #0bb113));
@@ -193,102 +235,24 @@ background: -ms-linear-gradient(top, #0bb113 0%, #2dc915 100%);
 background: linear-gradient(to bottom, #0bb113 0%, #2dc915 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0bb113', endColorstr='#2dc915', GradientType=0 );}
 
-.OrangeButton .ui-button-text{font-family: iran,IranSans,yekan !important;box-shadow: inset 0 0 0 1px #f15a29; border: solid 1px #f15a29; text-shadow: 0 -1px 0 #f15a29;
+.OrangeButton .ui-button-text{box-shadow: inset 0 0 0 1px #DBB626; border: solid 1px #876C17; text-shadow: 0 -1px 0 #7B6308;
 background: #c99f15;
-background: -moz-linear-gradient(top, #f15a29 0%, #e3430f 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #e3430f), color-stop(100%, #e3430f));
-background: -webkit-linear-gradient(top, #f15a29 0%, #e3430f 100%);
-background: -o-linear-gradient(top, #f15a29 0%, #e3430f 100%);
-background: -ms-linear-gradient(top, #f15a29 0%, #e3430f 100%);
-background: linear-gradient(to bottom, #f15a29  0%, #e3430f 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3430f', endColorstr='#f15a29', GradientType=0 );}
+background: -moz-linear-gradient(top, #c99f15 0%, #b1900b 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #c99f15), color-stop(100%, #b1900b));
+background: -webkit-linear-gradient(top, #c99f15 0%, #b1900b 100%);
+background: -o-linear-gradient(top, #c99f15 0%, #b1900b 100%);
+background: -ms-linear-gradient(top, #c99f15 0%, #b1900b 100%);
+background: linear-gradient(to bottom, #c99f15 0%, #b1900b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c99f15', endColorstr='#b1900b', GradientType=0 );}
 .OrangeButton:hover .ui-button-text, .OrangeButton:focus .ui-button-text{color:#ffffff !important;
 background: #b1900b;
-background: -moz-linear-gradient(top, #e3430f 0%, #f15a29 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #e3430f), color-stop(100%, #f15a29));
-background: -webkit-linear-gradient(top, #e3430f 0%, #f15a29 100%);
-background: -o-linear-gradient(top, #e3430f 0%, #f15a29 100%);
-background: -ms-linear-gradient(top, #e3430f 0%, #f15a29 100%);
-background: linear-gradient(to bottom, #e3430f 0%, #f15a29 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3430f', endColorstr='#f15a29', GradientType=0 );}
-
-
-
-.YelloButton .ui-button-text{font-family: iran,IranSans,yekan !important;box-shadow: inset 0 0 0 1px #ffd100; border: solid 1px #ffd100; text-shadow: 0 -1px 0 #ffd100;
-background: #c99f15;
-background: -moz-linear-gradient(top, #ffd100 0%, #e7bd00 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffd100), color-stop(100%, #e7bd00));
-background: -webkit-linear-gradient(top, #ffd100 0%, #e7bd00 100%);
-background: -o-linear-gradient(top, #ffd100 0%, #e7bd00 100%);
-background: -ms-linear-gradient(top, #ffd100 0%, #e7bd00 100%);
-background: linear-gradient(to bottom, #ffd100  0%, #e7bd00 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd100', endColorstr='#e7bd00', GradientType=0 );}
-.YelloButton:hover .ui-button-text, .YelloButton:focus .ui-button-text{color:#ffffff !important;
-background: #b1900b;
-background: -moz-linear-gradient(top, #e7bd00 0%, #ffd100 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #e7bd00), color-stop(100%, #ffd100));
-background: -webkit-linear-gradient(top, #e7bd00 0%, #ffd100 100%);
-background: -o-linear-gradient(top, #e7bd00 0%, #ffd100 100%);
-background: -ms-linear-gradient(top, #e7bd00 0%, #ffd100 100%);
-background: linear-gradient(to bottom, #e7bd00 0%, #ffd100 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7bd00', endColorstr='#ffd100', GradientType=0 );}
-
-.BlueButton .ui-button-text{font-family: iran,IranSans,yekan !important;box-shadow: inset 0 0 0 1px #27aae1; border: solid 1px #27aae1; text-shadow: 0 -1px 0 #27aae1;
-background: #c99f15;
-background: -moz-linear-gradient(top, #27aae1 0%, #2398c9 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #27aae1), color-stop(100%, #2398c9));
-background: -webkit-linear-gradient(top, #27aae1 0%, #2398c9 100%);
-background: -o-linear-gradient(top, #27aae1 0%, #2398c9 100%);
-background: -ms-linear-gradient(top, #27aae1 0%, #2398c9 100%);
-background: linear-gradient(to bottom, #27aae1  0%, #2398c9 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27aae1', endColorstr='#e7bd00', GradientType=0 );}
-.BlueButton:hover .ui-button-text, .BlueButton:focus .ui-button-text{color:#ffffff !important;
-background: #b1900b;
-background: -moz-linear-gradient(top, #2398c9 0%, #27aae1 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #2398c9), color-stop(100%, #27aae1));
-background: -webkit-linear-gradient(top, #2398c9 0%, #27aae1 100%);
-background: -o-linear-gradient(top, #2398c9 0%, #27aae1 100%);
-background: -ms-linear-gradient(top, #2398c9 0%, #27aae1 100%);
-background: linear-gradient(to bottom, #2398c9 0%, #27aae1 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2398c9', endColorstr='#27aae1', GradientType=0 );}
-
-.MainButton .ui-button-text{font-family: iran,IranSans,yekan !important;font-size: 13px; box-shadow: inset 0 0 0 1px #6e6d6d; border: solid 1px #464646; text-shadow: 0 -1px 0 #670606;
-background: #c91515;
-background: -moz-linear-gradient(top, #464646 0%, #3e3d3d 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #464646), color-stop(100%, #3e3d3d));
-background: -webkit-linear-gradient(top, #464646 0%, #3e3d3d 100%);
-background: -o-linear-gradient(top, #464646 0%, #3e3d3d 100%);
-background: -ms-linear-gradient(top, #464646 0%, #3e3d3d 100%);
-background: linear-gradient(to bottom, #464646 0%, #3e3d3d 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#464646', endColorstr='#3e3d3d', GradientType=0 );}
-.MainButton:hover .ui-button-text, .MainButton:focus .ui-button-text{color:#ffd104 !important;
-background: #b10b0b;
-background: -moz-linear-gradient(top, #3e3d3d 0%, #464646 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #3e3d3d), color-stop(100%, #464646));
-background: -webkit-linear-gradient(top, #3e3d3d 0%, #464646 100%);
-background: -o-linear-gradient(top, #3e3d3d 0%, #464646 100%);
-background: -ms-linear-gradient(top, #3e3d3d 0%, #464646 100%);
-background: linear-gradient(to bottom, #3e3d3d 0%, #464646 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3d3d', endColorstr='#464646', GradientType=0 );}
-
-.MainButton2 .ui-button-text{color:#85848d !important; font-family: iran,IranSans,yekan !important;font-size: 12px; box-shadow: inset 0 0 0 1px #ffffff; border: solid 1px #eaeef0; text-shadow: 0 -1px 0 #dee3e6;
-background: #c91515;
-background: -moz-linear-gradient(top, #dee3e6 0%, #eaeef0 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #dee3e6), color-stop(100%, #eaeef0));
-background: -webkit-linear-gradient(top, #dee3e6 0%, #eaeef0 100%);
-background: -o-linear-gradient(top, #dee3e6 0%, #eaeef0 100%);
-background: -ms-linear-gradient(top, #dee3e6 0%, #eaeef0 100%);
-background: linear-gradient(to bottom, #dee3e6 0%, #eaeef0 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee3e6', endColorstr='#eaeef0', GradientType=0 );}
-.MainButton2:hover .ui-button-text, .MainButton2:focus .ui-button-text{color:#85848d !important;
-background: #b10b0b;
-background: -moz-linear-gradient(top, #eaeef0 0%, #dee3e6 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #eaeef0), color-stop(100%, #dee3e6));
-background: -webkit-linear-gradient(top, #eaeef0 0%, #dee3e6 100%);
-background: -o-linear-gradient(top, #eaeef0 0%, #dee3e6 100%);
-background: -ms-linear-gradient(top, #eaeef0 0%, #dee3e6 100%);
-background: linear-gradient(to bottom, #eaeef0 0%, #dee3e6 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeef0', endColorstr='#dee3e6', GradientType=0 );}
+background: -moz-linear-gradient(top, #b1900b 0%, #c99f15 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #b1900b), color-stop(100%, #c99f15));
+background: -webkit-linear-gradient(top, #b1900b 0%, #c99f15 100%);
+background: -o-linear-gradient(top, #b1900b 0%, #c99f15 100%);
+background: -ms-linear-gradient(top, #b1900b 0%, #c99f15 100%);
+background: linear-gradient(to bottom, #b1900b 0%, #c99f15 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b1900b', endColorstr='#c99f15', GradientType=0 );}
 
 /* shadow for elements*/
 .shadows{-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);}
@@ -335,10 +299,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeef0', end
 /* fonts */
 .fontRegular{font-family: 'titillium_webregular' !important;}
 .fontItalic{font-style:italic;}
-.IranSans{font-family: 'IranSans' !important;}
-.fontYekan{font-family: 'yekan' !important;}
-
-.fontIran{font-family: 'iran' !important;}
 
 .fontSemibold{font-family: 'titillium_websemibold';}
 .fontSemiboldItalic{font-family: 'titillium_websemibold_italic';}
@@ -346,6 +306,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeef0', end
 .fontBold{font-family: 'titillium_webbold';}
 .fontBoldItalic{font-family: 'titillium_webbold_italic';}
 
+.fontIran{font-family: 'iran';}
+
+.Seperator{border-bottom:solid 1px #ccc; overflow:hidden; display:block; width:100%; margin:5px 0px;}
 
 /* Font Icons Page CSS ======================================================================================================== */
 .row {
@@ -642,37 +605,4 @@ box-shadow: inset 0px 0px 0px 1px rgba(100,100,100,1);
 
 #layout-portlets-cover:after {
     clear: both; 
-}
-.ClassRTL{
-    direction: rtl;
-}
-.ui-widget {
-    font-family: iran,IranSans,yekan !important;
-    font-size: 12px;
-}
-.ui-widget .ui-widget {
-    font-family: iran,IranSans,yekan !important;
-}
-.ui-inputfield{
-    font-family: iran,IranSans,yekan !important;
-    font-size: 12px;
-}
-.ui-selectonemenu .ui-selectonemenu-label{
-    text-align: right !important;
-    
-}
-.ui-selectonemenu{
-    background: #ffffff !important;
-}
-.ui-selectonemenu .ui-selectonemenu-trigger {
-    left: 0 !important;
-    right: auto !important;
-  
-}
-.ui-selectonemenu .ui-selectonemenu-trigger, .ui-selectcheckboxmenu .ui-selectcheckboxmenu-trigger {
-    border-bottom-left-radius: 5px !important;
-    border-top-left-radius: 5px !important;
-}
-.ui-selectonemenu .ui-selectonemenu-label {
-    width: auto !important;
 }
