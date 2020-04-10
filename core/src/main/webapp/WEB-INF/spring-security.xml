@@ -17,22 +17,21 @@
         <intercept-url pattern="/web/s/**" access="isAuthenticated()" />
 
         <form-login login-page="/web/ns/login"
-                    default-target-url="/web/s/main"
+                    default-target-url="/web/ns/main"
                     username-parameter="username"
                     password-parameter="password"
                     login-processing-url="/web/ns/login"
-                    authentication-success-handler-ref="authenticationSuccessHandler"
                     authentication-failure-url="/web/ns/accessDenied" />
-        <logout logout-url="/logout" logout-success-url="/web/ns/login" />
+
+        <logout logout-url="/logout" invalidate-session="true"
+                delete-cookies="true" logout-success-url="/web/ns/login" />
 
         <session-management invalid-session-url="/web/ns/login" >
-            <concurrency-control max-sessions="1" error-if-maximum-exceeded="true" expired-url="/web/ns/login"/>
+            <concurrency-control max-sessions="1" error-if-maximum-exceeded="true"
+                                 expired-url="/web/ns/login"/>
         </session-management>
 
     </http>
-
-    <beans:bean id="authenticationSuccessHandler"
-                class="com.secure.RefererRedirectionAuthenticationSuccessHandler" />
 
 
 <!--    <authentication-manager>-->

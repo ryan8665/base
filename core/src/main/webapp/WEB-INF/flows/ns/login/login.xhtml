@@ -25,11 +25,11 @@
                 <div class="Container50 TexAlCenter Animated05 BoxSizeBorder TabBtn left TabBtnActiveLeft" role="2">
                     <div class="Container80 Fnone MarAuto FontBold"> ورود کاربران <i class="icon-lock"></i></div>
                 </div>
-                <h:form >
+                <h:form id="loginFormId" prependId="false">
                     <div class="Container90 Fnone MarAuto DispNone TexAlCenter TabContent OvHidden" id="TAB1">
                         <p:messages id="messages2"  autoUpdate="true" closable="true" />
                         <div class="EmptyBox50"></div>
-                        <p:inputText maxlength="12" id="tel" required="true" requiredMessage="لطفا شماره تلفن همراه خود را وارد نمائید"  placeholder="شماره تلفن همراه" styleClass="Container80 Fnone MarAuto Fs18"/>
+                        <p:inputText maxlength="12" id="tel"  requiredMessage="لطفا شماره تلفن همراه خود را وارد نمائید"  placeholder="شماره تلفن همراه" styleClass="Container80 Fnone MarAuto Fs18"/>
                         <div class="EmptyBox20"></div>
                         <p:commandButton styleClass="BlueButton" resetValues="true" ajax="false" value="ارسال" action="dologin"   update="messages2 tel" />
                         <div class="EmptyBox50"></div>

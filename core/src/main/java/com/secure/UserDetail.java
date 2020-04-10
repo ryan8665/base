@@ -15,7 +15,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 
-public class userDetail implements UserDetailsService {
+public class UserDetail implements UserDetailsService {
     private UserDao userDao;
 
     public void setUserDao(UserDao userDao) {

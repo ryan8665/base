@@ -26,12 +26,12 @@
         <spring.ws.version>3.0.8.RELEASE</spring.ws.version>
         <spring.security.version>5.0.1.RELEASE</spring.security.version>
         <spring.webflow.version>2.4.8.RELEASE</spring.webflow.version>
-        <primefaces.version>7.0</primefaces.version>
+        <primefaces.version>8.0</primefaces.version>
         <log4j.version>1.2.13</log4j.version>
         <commons-collections.version>3.2.1</commons-collections.version>
         <junit.version>4.11</junit.version>
         <myfaces.version>2.1.10</myfaces.version>
-        <primefaces.extensions.version>6.1.1</primefaces.extensions.version>
+        <primefaces.extensions.version>8.0</primefaces.extensions.version>
         <commons-fileupload-version>1.4</commons-fileupload-version>
         <commons-io-version>2.6</commons-io-version>
         <commons-net-version>3.6</commons-net-version>
