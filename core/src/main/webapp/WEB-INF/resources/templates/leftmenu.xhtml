@@ -16,8 +16,13 @@
         <h:form id="menuform"  >
             <ps:menu id="sm_leftmenu">
 
-                <p:menuitem id="sm_dashboard" value="Dashboard" icon="icon-home-outline" url="login"
-                            containerStyleClass="layout-menubar-active"/>
+                <p:menuitem id="sm_dashboard" value="#{msg['side.menu.dashboard']}" rendered="#{p:ifGranted('ROLE_ADMIN')}" icon="icon-home-outline" url="login" containerStyleClass="layout-menubar-active"/>
+                <p:menuitem id="sm_alarm" value="#{msg['side.menu.alarm']}" rendered="#{p:ifGranted('ROLE_USER')}" icon="icon-home-outline" url="login" containerStyleClass="layout-menubar-active"/>
+                <p:menuitem id="sm_message" value="#{msg['side.menu.message']}" icon="icon-home-outline" url="login" containerStyleClass="layout-menubar-active"/>
+                <p:menuitem id="sm_control_panel" value="#{msg['side.menu.control.panel']}" icon="icon-home-outline" url="login" containerStyleClass="layout-menubar-active"/>
+                <p:menuitem id="sm_statistic" value="#{msg['side.menu.statistic']}" icon="icon-home-outline" url="login" containerStyleClass="layout-menubar-active"/>
+                <p:menuitem id="sm_help" value="#{msg['side.menu.help']}" icon="icon-home-outline" url="login" containerStyleClass="layout-menubar-active"/>
+                <p:menuitem id="sm_about" value="#{msg['side.menu.about']}" icon="icon-home-outline" url="login" containerStyleClass="layout-menubar-active"/>
 
             </ps:menu>
         </h:form>
