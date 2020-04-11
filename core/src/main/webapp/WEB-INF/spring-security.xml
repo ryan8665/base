@@ -23,13 +23,17 @@
                     login-processing-url="/web/ns/login"
                     authentication-failure-url="/web/ns/accessDenied" />
 
-        <logout logout-url="/logout" invalidate-session="true"
-                delete-cookies="true" logout-success-url="/web/ns/login" />
+        <logout logout-url="/logout"
+                invalidate-session="true"
+                delete-cookies="JSESSIONID"
+                logout-success-url="/web/ns/login" />
 
         <session-management invalid-session-url="/web/ns/login" >
             <concurrency-control max-sessions="1" error-if-maximum-exceeded="true"
                                  expired-url="/web/ns/login"/>
         </session-management>
+
+        <access-denied-handler error-page="/web/ns/accessDenied"/>
 
     </http>
 
