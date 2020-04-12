@@ -3,9 +3,8 @@ package com.bean;
 import com.ApplicationConfig;
 import com.entity.AlirezaEntity;
 import com.service.AlirezaService;
-import org.springframework.security.access.prepost.PreAuthorize;
 
-public class MainBean {
+public class MainBean extends BaseBean{
    private ApplicationConfig applicationConfig;
    private AlirezaService alirezaservice;
    private String a ="aaaa";
