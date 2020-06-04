@@ -7,6 +7,11 @@
     <bean id="main" class="com.bean.MainBean" scope="session">
         <property name="applicationConfig" ref="applicationConfig"/>
         <property name="alirezaservice" ref="alirezaservice"/>
+        <property name="userService" ref="userService"/>
+
+    </bean>
+
+    <bean id="login" class="com.bean.LoginBean" scope="session">
     </bean>
 
 </beans>

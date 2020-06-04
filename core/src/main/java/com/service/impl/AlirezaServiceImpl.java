@@ -2,6 +2,7 @@ package com.service.impl;
 
 import com.dao.UserDao;
 import com.entity.AlirezaEntity;
+import com.entity.SecUserEntity;
 import com.service.AlirezaService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,7 +26,9 @@ public class AlirezaServiceImpl implements AlirezaService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        alirezadao.persistUser(alireza);
+        SecUserEntity us = new SecUserEntity();
+        us.setName("alireza");
+        alirezadao.persistUser(us);
 //        alirezadao.deleteUser(alireza);
     }
 

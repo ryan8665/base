@@ -7,6 +7,7 @@ public class User {
     private String username;
     private String password;
     private boolean enabled;
+    private String name;
     private Set<UserRole> userRole = new HashSet<UserRole>(0);
 
 
@@ -40,5 +41,13 @@ public class User {
 
     public void setUserRole(Set<UserRole> userRole) {
         this.userRole = userRole;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

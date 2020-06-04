@@ -5,4 +5,8 @@
     <bean id="alirezaservice" class="com.service.impl.AlirezaServiceImpl">
         <property name="alirezadao" ref="userDao"/>
     </bean>
+
+    <bean id="userService" class="com.nsoft.service.impl.UserServiceImpl">
+
+    </bean>
 </beans>

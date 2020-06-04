@@ -41,9 +41,9 @@ public class UserDetail implements UserDetailsService {
         return buildUserForAuthentication(user, authorities);
     }
 
-    private User buildUserForAuthentication(com.model.User user,
+    private Profile buildUserForAuthentication(com.model.User user,
                                             List<GrantedAuthority> authorities) {
-        return new User(user.getUsername(),
+        return new Profile("alirezaaaa",user.getUsername(),
                 user.getPassword(), user.isEnabled(),
                 true, true, true, authorities);
     }

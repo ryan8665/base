@@ -3,15 +3,11 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.4.xsd">
     <on-start>
-        <evaluate expression="main.ali()"/>
+        <evaluate expression="login.init()"/>
     </on-start>
     <view-state id="login">
-        <transition on="doLogin" to="page" >
-
-        </transition>
-    </view-state>
-
-    <view-state id="page">
 
     </view-state>
+
+
 </flow>

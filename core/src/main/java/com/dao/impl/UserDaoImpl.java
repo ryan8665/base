@@ -2,6 +2,7 @@ package com.dao.impl;
 
 import com.dao.UserDao;
 import com.entity.AlirezaEntity;
+import com.entity.SecUserEntity;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +18,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public void persistUser(AlirezaEntity user) {
+    public void persistUser(SecUserEntity user) {
         sessionFactory.getCurrentSession().persist(user);
     }
 

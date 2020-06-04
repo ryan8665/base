@@ -2,23 +2,24 @@ package com.bean;
 
 import com.ApplicationConfig;
 import com.entity.AlirezaEntity;
+import com.nsoft.service.UserService;
+import com.scheduler.SampleTask;
 import com.service.AlirezaService;
+import org.apache.log4j.Logger;
 
 public class MainBean extends BaseBean{
+    final static Logger logger = Logger.getLogger(MainBean.class);
    private ApplicationConfig applicationConfig;
    private AlirezaService alirezaservice;
-   private String a ="aaaa";
+   private UserService userService;
 
-    public String getA() {
-        return a;
-    }
-
-    public void setA(String a) {
-        this.a = a;
-    }
 
     public void setApplicationConfig(ApplicationConfig applicationConfig) {
         this.applicationConfig = applicationConfig;
+    }
+
+    public void setUserService(UserService userService) {
+        this.userService = userService;
     }
 
     public void setAlirezaservice(AlirezaService alirezaservice) {
@@ -35,6 +36,12 @@ public class MainBean extends BaseBean{
     }
 
     public String doLogin(){
+        try {
+            userService.retrieveUserDetails();
+        } catch (Exception e) {
+            logger.error(e.toString());
+            e.printStackTrace();
+        }
         return "success";
     }
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="restTemplateRequestFactory" class="org.springframework.http.client.SimpleClientHttpRequestFactory">
+            <property name="connectTimeout" value="20000"/>
+            <property name="readTimeout" value="20000"/>
+        </bean>
+
+        <bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
+            <property name="requestFactory" ref="restTemplateRequestFactory"/>
+        </bean>
+
+        <bean id="restConnector" class="com.backendchannel.impl.BackenedConnectorRest" scope="singleton" >
+            <property name="applicationConfig" ref="applicationConfig"/>
+            <property name="restTemplate" ref="restTemplate"/>
+        </bean>
+</beans>

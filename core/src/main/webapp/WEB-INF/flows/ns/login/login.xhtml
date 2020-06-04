@@ -12,8 +12,9 @@
         <div class="Container">
             <div class="Container80 MaxWid500 Fnone MarAuto TexAlCenter PaddingTopPercent10">
                 <a href="" id="login-logo">
-                    <p:graphicImage value="./resources/sentinel-layout/images/LOGO.svg" styleClass="Fleft" />
-                    <span class="Fs30 FontTitilliumSemiBoldItalic Fleft"><span class="softblue">SENTINEL</span><span class="hardblue">LAYOUT</span></span>
+                    <p:graphicImage value="./resources/sentinel-layout/images/LOGO.svg" styleClass="Fleft"/>
+                    <span class="Fs30 FontTitilliumSemiBoldItalic Fleft"><span class="softblue">SENTINEL</span><span
+                            class="hardblue">LAYOUT</span></span>
                 </a>
                 <div class="EmptyBox10"></div>
             </div>
@@ -29,32 +30,45 @@
                     </div>
 
                     <div class="Container90 Fnone MarAuto TexAlCenter TabContent OvHidden" id="TAB1">
-                        <P:form prependId="false">
-                        <div class="EmptyBox50"></div>
-                        <p:inputText value="" id="username" placeholder="Username" styleClass="Container80 Fnone MarAuto Fs18"/>
-                        <div class="EmptyBox10"></div>
-                        <p:password value="" id="password" placeholder="Password" styleClass="Container80 Fnone MarAuto Fs18" feedback="false"/>
-                        <div class="EmptyBox20"></div>
-                        <div class="Container85 Fnone MarAuto softgray">
-                            <p:selectBooleanCheckbox value="accept" styleClass="Fleft" itemLabel="I Accept Terms And Policies"/>
-                        </div>
-                        <div class="EmptyBox30"></div>
-                            <p:commandButton styleClass="BlueButton" resetValues="true" ajax="false" value="Log in" />
-                        <div class="EmptyBox50"></div>
-                        </P:form>
+                        <h:form id="formMain" prependId="false">
+                            <div class="EmptyBox50"></div>
+                            <p:inputText value="" required="true" id="username"
+                                         placeholder="Username"
+                                         styleClass="Container80 Fnone MarAuto Fs18"/>
+                            <div class="EmptyBox10"></div>
+                            <p:password value="" required="true" id="password"
+                                        placeholder="Password"
+                                        styleClass="Container80 Fnone MarAuto Fs18" feedback="false"/>
+                            <div class="EmptyBox20"></div>
+                            <div class="Container85 Fnone MarAuto softgray">
+
+                                <p:selectBooleanCheckbox required="true" value="#{login.accept}" styleClass="Fleft"
+                                                         itemLabel="I Accept Terms And Policies">
+
+                                </p:selectBooleanCheckbox>
+
+                            </div>
+                            <div class="EmptyBox30"></div>
+                            <p:commandButton id="loginBtn" widgetVar="loginBtn" styleClass="BlueButton"
+                                             resetValues="true" ajax="false" value="Log in"
+                                             ignoreAutoUpdate="true"/>
+
+                            <div class="EmptyBox50"></div>
+                        </h:form>
                     </div>
 
                     <div class="Container90 Fnone MarAuto DispNone TexAlCenter TabContent OvHidden" id="TAB2">
                         <div class="EmptyBox50"></div>
-                        <p:inputText value="" placeholder="Your Email Address" styleClass="Container80 Fnone MarAuto Fs18"/>
+                        <p:inputText value="" placeholder="Your Email Address"
+                                     styleClass="Container80 Fnone MarAuto Fs18"/>
                         <div class="EmptyBox20"></div>
-                        <p:button  value="Send Access Request" styleClass="Fs16"></p:button>
+                        <p:button value="Send Access Request" styleClass="Fs16"></p:button>
                         <div class="EmptyBox50"></div>
                     </div>
                 </div>
             </div>
         </div>
-    <!-- LOGIN BOX COVER END -->
+        <!-- LOGIN BOX COVER END -->
 
     </ui:define>
 </ui:composition>
