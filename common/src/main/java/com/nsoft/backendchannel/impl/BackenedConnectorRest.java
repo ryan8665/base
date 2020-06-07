@@ -8,6 +8,7 @@ import com.nsoft.backendchannel.model.message.Message;
 import com.nsoft.backendchannel.model.message.rest.RestMessageRequest;
 import com.nsoft.backendchannel.model.message.rest.RestMessageResponse;
 
+import com.nsoft.exception.BadRequestException;
 import org.apache.log4j.Logger;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -35,7 +36,7 @@ public class BackenedConnectorRest implements BackendConnector {
         if (requestMessage == null || !(requestMessage instanceof RestMessageRequest)) {
             log.error("Error, Bad requestMessage found in BackenedConnectorRest.executeRequest(Message requestMessage)."
                     + " requestMessage-->[" + requestMessage + "]");
-//            throw new BadRequestException();
+            throw new BadRequestException();
         }
         RestMessageRequest request = (RestMessageRequest) requestMessage;
         try {
