@@ -9,8 +9,8 @@
     </bean>
     <beans profile="dev">
         <task:scheduled-tasks>
-            <task:scheduled ref="sampleTask" cron="0 40 11 * * *" method="run"/>
-            <task:scheduled ref="sampleTask" fixed-delay="${timer}" method="runA"/>
+            <task:scheduled ref="sampleTask" cron="0 40 11 * * *" method="runA"/>
+            <task:scheduled ref="sampleTask" fixed-delay="${timer}" method="run"/>
         </task:scheduled-tasks>
     </beans>
 </beans>

@@ -1,13 +1,13 @@
 package com.bean;
 
-import com.ApplicationConfig;
 import com.entity.AlirezaEntity;
+import com.nsoft.ApplicationConfig;
+import com.nsoft.bean.BaseBean;
 import com.nsoft.service.UserService;
-import com.scheduler.SampleTask;
 import com.service.AlirezaService;
 import org.apache.log4j.Logger;
 
-public class MainBean extends BaseBean{
+public class MainBean extends BaseBean {
     final static Logger logger = Logger.getLogger(MainBean.class);
    private ApplicationConfig applicationConfig;
    private AlirezaService alirezaservice;

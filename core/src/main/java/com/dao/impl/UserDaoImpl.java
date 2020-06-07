@@ -3,6 +3,7 @@ package com.dao.impl;
 import com.dao.UserDao;
 import com.entity.AlirezaEntity;
 import com.entity.SecUserEntity;
+import com.nsoft.entity.BaseEntity;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -36,7 +37,6 @@ public class UserDaoImpl implements UserDao {
     public void deleteUser(AlirezaEntity user) {
         sessionFactory.getCurrentSession().delete(user);
     }
-
 
 
 }

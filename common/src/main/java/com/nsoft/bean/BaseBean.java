@@ -1,4 +1,4 @@
-package com.bean;
+package com.nsoft.bean;
 
 import com.nsoft.exception.BaseException;
 

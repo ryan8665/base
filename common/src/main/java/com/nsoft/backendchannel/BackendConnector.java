@@ -1,7 +1,7 @@
-package com.backendchannel;
+package com.nsoft.backendchannel;
 
 
-import com.backendchannel.model.message.Message;
+import com.nsoft.backendchannel.model.message.Message;
 
 public interface BackendConnector {
     Message executeRequest(Message requestMessage);

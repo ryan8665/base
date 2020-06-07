@@ -1,12 +1,12 @@
-package com.backendchannel.impl;
+package com.nsoft.backendchannel.impl;
 
-import com.ApplicationConfig;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
-import com.backendchannel.BackendConnector;
-import com.backendchannel.model.message.Message;
-import com.backendchannel.model.message.rest.RestMessageRequest;
-import com.backendchannel.model.message.rest.RestMessageResponse;
+import com.nsoft.ApplicationConfig;
+import com.nsoft.backendchannel.BackendConnector;
+import com.nsoft.backendchannel.model.message.Message;
+import com.nsoft.backendchannel.model.message.rest.RestMessageRequest;
+import com.nsoft.backendchannel.model.message.rest.RestMessageResponse;
 
 import org.apache.log4j.Logger;
 import org.springframework.http.HttpEntity;
@@ -20,7 +20,7 @@ import java.io.StringReader;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Arrays;
-
+import java.util.logging.Level;
 
 
 public class BackenedConnectorRest implements BackendConnector {
@@ -41,11 +41,15 @@ public class BackenedConnectorRest implements BackendConnector {
         try {
             URI requestUri = new URI(request.getUri());
             log.info("Sending rest to Uri ---> "+request.getUri());
+            Gson og = new Gson();
+            String requestJson = og.toJson(request);
+            log.info("requestJson ---> "+requestJson);
             HttpHeaders headers = new HttpHeaders();
             headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
             headers.setContentType(MediaType.APPLICATION_JSON);
-            String requestStr = request.getMessage();
-            HttpEntity<String> requestEntity = new HttpEntity<String>(requestStr, headers);
+
+//            String requestStr = request.getMessage();
+            HttpEntity<String> requestEntity = new HttpEntity<String>(requestJson, headers);
             log.info("Sending rest message... request.toString()-->[" + request.toString() + "] , "
                     + "requets.getMessage()-->[" + request.getMessage() + "]");
             ResponseEntity<String> responseEntity = restTemplate.exchange(requestUri, request.getHttpMethod(),
@@ -71,7 +75,7 @@ public class BackenedConnectorRest implements BackendConnector {
 
             return responseObj;
         } catch (URISyntaxException ex) {
-//            java.util.logging.Logger.getLogger(BackenedConnectorRest.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BackenedConnectorRest.class.getName()).log(Level.SEVERE, null, ex);
             throw new RuntimeException();
         } catch (ResourceAccessException ex) {
             logResponseCreationException(request, ex);

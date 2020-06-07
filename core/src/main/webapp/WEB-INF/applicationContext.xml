@@ -12,9 +12,9 @@
         </property>
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
     </bean>
-    <bean id="applicationConfig" class="com.ApplicationConfig" >
-        <constructor-arg name="configFilePath" value="conf/applicationConfig"/>
-    </bean>
+
+
+
 
     <import resource="webflow.xml"/>
     <import resource="spring-security.xml"/>
@@ -24,5 +24,16 @@
     <import resource="applicationContext-service.xml"/>
     <import resource="applicationContext-dao.xml"/>
     <import resource="applicationContext-rest.xml"/>
-    <!--<import resource="webflow.xml"/>-->
+
+
+    <beans profile="dev">
+        <bean id="applicationConfig" class="com.nsoft.ApplicationConfig" scope="singleton" >
+            <constructor-arg name="configFilePath" value="conf/applicationConfig"/>
+        </bean>
+    </beans>
+    <beans profile="Production">
+        <bean id="applicationConfig" class="com.nsoft.ApplicationConfig" scope="singleton" >
+            <constructor-arg name="configFilePath" value="conf/applicationConfig"/>
+        </bean>
+    </beans>
 </beans>

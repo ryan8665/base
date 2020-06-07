@@ -1,7 +1,7 @@
-package com.backendchannel.model.message.rest;
+package com.nsoft.backendchannel.model.message.rest;
 
 
-import com.backendchannel.model.message.RestMessage;
+import com.nsoft.backendchannel.model.message.RestMessage;
 import org.springframework.http.HttpMethod;
 
 

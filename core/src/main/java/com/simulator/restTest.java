@@ -1,6 +1,6 @@
 package com.simulator;
 
-import com.backendchannel.rest.dummy.DummyResponse;
+import com.backendchannel.dummy.DummyResponse;
 import com.google.gson.Gson;
 
 import javax.servlet.ServletException;
@@ -30,8 +30,8 @@ public class restTest extends HttpServlet {
 
     protected String response(){
         DummyResponse response = new DummyResponse();
-
-        response.setBlnc(Math.random()+"");
+        Long randNum = 10000000 + (long) (Math.random() * (999999999 - 10000000));
+        response.setBlnc(randNum+"");
 
         Gson gson = new Gson();
 

@@ -12,7 +12,7 @@
             <property name="requestFactory" ref="restTemplateRequestFactory"/>
         </bean>
 
-        <bean id="restConnector" class="com.backendchannel.impl.BackenedConnectorRest" scope="singleton" >
+        <bean id="restConnector" class="com.nsoft.backendchannel.impl.BackenedConnectorRest" scope="singleton" >
             <property name="applicationConfig" ref="applicationConfig"/>
             <property name="restTemplate" ref="restTemplate"/>
         </bean>

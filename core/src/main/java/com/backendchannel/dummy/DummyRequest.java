@@ -1,7 +1,7 @@
-package com.backendchannel.rest.dummy;
+package com.backendchannel.dummy;
 
 import com.google.gson.annotations.SerializedName;
-import com.backendchannel.model.message.rest.RestMessageRequest;
+import com.nsoft.backendchannel.model.message.rest.RestMessageRequest;
 
 import org.springframework.http.HttpMethod;
 

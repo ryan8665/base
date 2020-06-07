@@ -1,4 +1,4 @@
-package com.backendchannel.model.message;
+package com.nsoft.backendchannel.model.message;
 
 public abstract class RestMessage extends BaseMessage {
 
