@@ -62,15 +62,7 @@ public class BackenedConnectorRest implements BackendConnector {
             reader.setLenient(true);
             RestMessageResponse responseObj;
 
-//            if (requestMessage instanceof CurrencyStatementRequest) {
-//                JsonParser parser = new JsonParser();
-//                JsonArray jsonArray = parser.parse(responseStr).getAsJsonArray();
-//                JsonObject object = new JsonObject();
-//                object.add("statementDto", jsonArray);
-//                responseObj = (RestMessageResponse) gson.fromJson(object, request.getResponseClass());
-//            } else {
-//                responseObj = (RestMessageResponse) gson.fromJson(responseStr, request.getResponseClass());
-//            }
+
 
             responseObj = (RestMessageResponse) gson.fromJson(responseStr, request.getResponseClass());
 
