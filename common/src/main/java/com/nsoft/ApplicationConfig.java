@@ -2,12 +2,6 @@ package com.nsoft;
 
 import com.nsoft.util.AppContext;
 import org.apache.log4j.Logger;
-import org.apache.log4j.Logger;
-
-import java.io.Serializable;
-import java.text.ParseException;
-import java.util.*;
-import java.util.List;
 
 import java.util.ResourceBundle;
 
