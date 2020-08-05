@@ -12,6 +12,7 @@
         <module>core</module>
     </modules>
     <packaging>pom</packaging>
+    
 
     <name>base Maven Webapp</name>
     <!-- FIXME change it to the project's website -->
